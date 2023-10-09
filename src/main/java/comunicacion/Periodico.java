@@ -10,4 +10,28 @@ public class Periodico extends Escrito{
         this.primicia= primicia;
         this.interpretacion= interpretacion;
     }
+
+    public String getFecha(){
+        return fecha;
+    }
+
+    public void setFecha(String fecha){
+        this.fecha= fecha;
+    }
+
+    public String getPrimicia(){
+        return primicia;
+    }
+
+    public void setPrimicia(String primicia){
+        this.primicia= primicia;
+    }
+
+    public String getInterpretacion(){
+        return interpretacion;
+    }
+
+    public void setInterpretacion(String interpretacion){
+        this.interpretacion= interpretacion;
+    }
 }
