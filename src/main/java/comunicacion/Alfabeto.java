@@ -26,12 +26,12 @@ public class Alfabeto extends Pictograma{
         this.interpretacion= interpretacion;
     }
 
-    @override
+    @Override
     public String interpretacion(){
         return interpretacion;
     }
 
-    @override
+    @Override
     public String toString(){
         return "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z";
     }

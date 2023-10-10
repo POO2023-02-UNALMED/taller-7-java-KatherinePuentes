@@ -56,18 +56,18 @@ public class Tesis extends Escrito{
         this.interpretacion= interpretacion;
     }
 
-    @override
+    @Override
     public String interpretacion(){
         return interpretacion;
     }
 
-    @override
+    @Override
     public string toString(){
         int cantidadArgumentos= argumentos.length;
         return String.format("%s\n%s\n%s\n%d\n%s\n%d\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), idea, cantidadArgumentos, conclusion, referencias);
     }
 
-    @override
+    @Override
     public int palabrasTotales(int palabrasPagina){
         return getPaginas()* palabrasPagina* 5;
     }
