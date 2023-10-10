@@ -66,4 +66,9 @@ public class Tesis extends Escrito{
         int cantidadArgumentos= argumentos.length;
         return String.format("%s\n%s\n%s\n%d\n%s\n%d\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), idea, cantidadArgumentos, conclusion, referencias);
     }
+
+    @override
+    public int palabrasTotales(int palabrasPagina){
+        return getPaginas()* palabrasPagina* 5;
+    }
 }
