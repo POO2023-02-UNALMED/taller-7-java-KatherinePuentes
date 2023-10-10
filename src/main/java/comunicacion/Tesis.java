@@ -62,7 +62,7 @@ public class Tesis extends Escrito{
     }
 
     @Override
-    public string toString(){
+    public String toString(){
         int cantidadArgumentos= argumentos.length;
         return String.format("%s\n%s\n%s\n%d\n%s\n%d\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), idea, cantidadArgumentos, conclusion, referencias);
     }
