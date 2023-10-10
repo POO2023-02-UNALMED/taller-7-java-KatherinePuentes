@@ -45,4 +45,9 @@ public class Libro extends Escrito{
     public void setInterpretacion(String interpretacion){
         this.interpretacion= interpretacion;
     }
+
+    @override
+    public String interpretacion(){
+        return interpretacion;
+    }
 }

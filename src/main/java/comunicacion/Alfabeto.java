@@ -5,7 +5,7 @@ public class Alfabeto extends Pictograma{
     private String interpretacion;
 
     public Alfabeto(String origen, String[] letras, String interpretacion){
-        suṕer(origen);
+        super(origen);
         this.letras= letras;
         this.interpretacion= interpretacion;
     }
@@ -24,5 +24,15 @@ public class Alfabeto extends Pictograma{
 
     public void setInterpretacion(String interpretacion){
         this.interpretacion= interpretacion;
+    }
+
+    @override
+    public String interpretacion(){
+        return interpretacion;
+    }
+
+    @override
+    public String toString(){
+        return "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"
     }
 }
