@@ -50,4 +50,9 @@ public class Libro extends Escrito{
     public String interpretacion(){
         return interpretacion;
     }
+
+    @override
+    public string toString(){
+        return String.format("%s\n%s\n%s\n%d\n%s\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), co_autor, editorial, edicion);
+    }
 }

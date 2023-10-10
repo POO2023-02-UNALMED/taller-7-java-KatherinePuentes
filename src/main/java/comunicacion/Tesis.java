@@ -10,7 +10,7 @@ public class Tesis extends Escrito{
     public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion){
         super(origen, titulo, autor, paginas);
         this.idea= idea;
-        this. argumentos= argumentos;
+        this.argumentos= argumentos;
         this.conclusion= conclusion;
         this.referencias= referencias;
         this.interpretacion= interpretacion;
@@ -59,5 +59,11 @@ public class Tesis extends Escrito{
     @override
     public String interpretacion(){
         return interpretacion;
+    }
+
+    @override
+    public string toString(){
+        int cantidadArgumentos= argumentos.length;
+        return String.format("%s\n%s\n%s\n%d\n%s\n%d\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), idea, cantidadArgumentos, conclusion, referencias);
     }
 }
