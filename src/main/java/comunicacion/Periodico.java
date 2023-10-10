@@ -42,7 +42,7 @@ public class Periodico extends Escrito{
     }
 
     @Override
-    public string toString(){
+    public String toString(){
         return String.format("%s\n%s\n%s\n%d\n%s\n%s", getOrigen(), getTitulo(), getAutor(), getPaginas(), fecha, primicia);
     }
 
